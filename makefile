@@ -5,6 +5,7 @@ all: game
 
 game:	game.o
 	${CC} game.o -o game ${CFLAGS}
+	rm game.o
 
 game.o:	game.cpp
 	${CC} -c game.cpp

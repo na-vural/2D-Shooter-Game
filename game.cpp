@@ -1013,9 +1013,9 @@ inline sf::Vector2f Game::getRandCoord(const sf::Vector2u &textureSize)
 {
 	//-> Create a random x and y according to the game width and height and also
 	//   texture of the entities width and height.
-	sf::Vector2f randCoord(
-	randCoord.x = rand() % (width - textureSize.x),
-	randCoord.y = rand() % (height - textureSize.y));
+	sf::Vector2f randCoord;
+	randCoord.x = rand() % (width - textureSize.x);
+	randCoord.y = rand() % (height - textureSize.y);
 	//---
 	return randCoord;
 }

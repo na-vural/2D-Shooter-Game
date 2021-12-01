@@ -11,4 +11,4 @@ game.o:	game.cpp
 	${CC} -c game.cpp
 
 clean:
-	rm game.o game
+	rm game
